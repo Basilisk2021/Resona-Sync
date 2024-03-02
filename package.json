@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate"
-    
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.6",
@@ -37,14 +36,14 @@
     "clsx": "^2.1.0",
     "date-fns": "^3.3.1",
     "emoji-mart": "^5.5.2",
-    "jsonwebtoken": "^9.0.2",
     "eslint": "^8.56.0",
-    "eslint-config-next": "^14.1.0",
+    "eslint-config-next": "^13.4.12",
+    "jsonwebtoken": "^9.0.2",
     "livekit-client": "^2.0.2",
-    "livekit-server-sdk": "^2.0.3",
+    "livekit-server-sdk": "^2.0.4",
     "lodash": "^4.17.21",
     "lucide-react": "^0.320.0",
-    "next": "^14.1.0",
+    "next": "^13.4.12",
     "next-auth": "^4.24.5",
     "next-themes": "^0.2.1",
     "off": "^0.0.10",
