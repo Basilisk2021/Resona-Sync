@@ -1,4 +1,4 @@
-/* import { AccessToken } from "livekit-server-sdk";
+ import { AccessToken } from "livekit-server-sdk";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest) {
@@ -25,11 +25,10 @@ export async function GET(req: NextRequest) {
   at.addGrant({ room, roomJoin: true, canPublish: true, canSubscribe: true });
 
   return NextResponse.json({ token: at.toJwt() });
-} */
+} 
 
 
-
-import { AccessToken } from "livekit-server-sdk";
+/* import { AccessToken } from "livekit-server-sdk";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest) {
@@ -63,4 +62,4 @@ export async function GET(req: NextRequest) {
   at.addGrant({ room, roomJoin: true, canPublish: true, canSubscribe: true });
 
   return NextResponse.json({ token: await at.toJwt() });
-}
+} */
