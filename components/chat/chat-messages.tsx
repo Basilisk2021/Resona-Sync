@@ -75,7 +75,7 @@ export const ChatMessages = ({
     return (
       <div className="flex flex-col flex-1 justify-center items-center">
         <Loader2 className="h-7 w-7 text-zinc-500 animate-spin my-4" />
-        <p className="text-xs text-zinc-500 dark:text-zinc-400">
+        <p className="text-xs text-zinc-500">
           Loading messages...
         </p>
       </div>
@@ -86,7 +86,7 @@ export const ChatMessages = ({
     return (
       <div className="flex flex-col flex-1 justify-center items-center">
         <ServerCrash className="h-7 w-7 text-zinc-500 my-4" />
-        <p className="text-xs text-zinc-500 dark:text-zinc-400">
+        <p className="text-xs text-zinc-500">
           Something went wrong!
         </p>
       </div>
@@ -109,14 +109,14 @@ export const ChatMessages = ({
           ) : (
             <button
               onClick={() => fetchNextPage()}
-              className="text-zinc-500 hover:text-zinc-600 dark:text-zinc-400 text-xs my-4 dark:hover:text-zinc-300 transition"
+              className="text-zinc-500 hover:text-zinc-600 text-xs my-4 transition"
             >
               Load previous messages
             </button>
           )}
         </div>
       )}
-        <div className="flex flex-col-reverse mt-auto">
+        <div className="flex flex-col-reverse mt-auto text-black">
         {data?.pages?.map((group, i) => (
           <Fragment key={i}>
             {group.items.map((message: MessageWithMemberWithProfile) => (

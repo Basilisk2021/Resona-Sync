@@ -1,0 +1,8 @@
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #11999E; /* สีของ Thumb ใน Scrollbar */
+    border: none;
+  }

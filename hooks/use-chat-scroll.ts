@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import "./styles.css";
 type ChatScrollProps = {
   chatRef: React.RefObject<HTMLDivElement>;
   bottomRef: React.RefObject<HTMLDivElement>;

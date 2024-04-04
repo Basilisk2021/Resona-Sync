@@ -43,7 +43,7 @@ const ChannelIdPage = async ({
   }
 
   return ( 
-    <div className="bg-white dark:bg-[#506450] flex flex-col h-full">
+    <div className="bg-white flex flex-col h-full rounded-3xl ">
        <ChatHeader
         name={channel.name}
         serverId={channel.serverId}
@@ -84,7 +84,7 @@ const ChannelIdPage = async ({
         />
       )}
       {channel.type === ChannelType.VIDEO && (
-        <MediaRoom
+        <MediaRoom 
           chatId={channel.id}
           video={true}
           audio={true}

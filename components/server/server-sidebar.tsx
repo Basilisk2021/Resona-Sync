@@ -71,13 +71,13 @@ export const ServerSidebar = async ({
   const role = server.members.find((member) => member.profileId === profile.id)?.role;
 
   return (
-    <div className="flex flex-col h-full text-primary w-full dark:bg-[#0B5345] bg-[#F2F3F5]">
+    <div className="flex flex-col h-full text-primary w-full bg-[#F2F3F5] rounded-3xl ">
       <ServerHeader
         server={server}
         role={role}
       />
       <ScrollArea className="flex-1 px-3">
-        <div className="mt-2">
+        <div className="mt-2 ">
 {/*           <ServerSearch
             data={[
               {
@@ -119,9 +119,9 @@ export const ServerSidebar = async ({
             ]}
           />*/}
         </div> 
-        <Separator className="bg-zinc-200 dark:bg-zinc-700 rounded-md my-2" />
+        <Separator className="bg-zinc-200  rounded-md my-2 " />
          {!!textChannels?.length && (
-          <div className="mb-2">
+          <div className="mb-2 ">
             <ServerSection
               sectionType="channels"
               channelType={ChannelType.TEXT}

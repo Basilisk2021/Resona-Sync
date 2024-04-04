@@ -97,13 +97,13 @@ export const MembersModal = () => {
 
   return (
     <Dialog open={isModalOpen} onOpenChange={onClose}>
-      <DialogContent className="bg-white text-black overflow-hidden">
+      <DialogContent className="bg-gradient-to-b from-emerald-500 from-10% to-[#11999E] to-90% shadow-2xl shadow-cyan-500/50 border-none overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
             Manage Members
           </DialogTitle>
           <DialogDescription 
-            className="text-center text-zinc-500"
+            className="text-center text-white"
           >
             {server?.members?.length} Members
           </DialogDescription>
@@ -117,7 +117,7 @@ export const MembersModal = () => {
                   {member.profile.name}
                   {roleIconMap[member.role]}
                 </div>
-                <p className="text-xs text-zinc-500">
+                <p className="text-xs text-white">
                   {member.profile.email}
                 </p>
               </div>
@@ -125,7 +125,7 @@ export const MembersModal = () => {
                 <div className="ml-auto">
                   <DropdownMenu>
                     <DropdownMenuTrigger>
-                      <MoreVertical className="h-4 w-4 text-zinc-500" />
+                      <MoreVertical className="h-4 w-4 text-white" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent side="left">
                       <DropdownMenuSub>

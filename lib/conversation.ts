@@ -10,6 +10,7 @@ export const getOrCreateConversation = async (memberOneId: string, memberTwoId: 
   return conversation;
 }
 
+
 const findConversation = async (memberOneId: string, memberTwoId: string) => {
   try {
     return await db.conversation.findFirst({
@@ -36,6 +37,9 @@ const findConversation = async (memberOneId: string, memberTwoId: string) => {
     return null;
   }
 }
+
+
+
 
 const createNewConversation = async (memberOneId: string, memberTwoId: string) => {
   try {

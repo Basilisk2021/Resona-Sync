@@ -42,19 +42,19 @@ export const ServerHeader = ({
         asChild
       >
         <button
-          className="w-full text-md font-semibold px-3 flex items-center h-12 border-neutral-200 dark:border-neutral-800 border-b-2 hover:bg-zinc-700/10 dark:hover:bg-zinc-700/50 transition"
+          className="text-black w-full text-md font-semibold px-3 flex items-center h-12 border-neutral-200 border-b-2 hover:bg-zinc-700/10 transition rounded-t-3xl"
         >
           {server.name}
           <ChevronDown className="h-5 w-5 ml-auto" />
         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent
-        className="w-56 text-xs font-medium text-black dark:text-neutral-400 space-y-[2px]"
+        className="w-56 text-xs font-medium text-white  space-y-[2px]"
       >
         {isModerator && (
           <DropdownMenuItem
             onClick={() => onOpen("invite", { server })}
-            className="text-green-400 dark:text-green-300 px-3 py-2 text-sm cursor-pointer"
+            className="text-green-400  px-3 py-2 text-sm cursor-pointer"
           >
             Invite People
             <UserPlus className="h-4 w-4 ml-auto" />

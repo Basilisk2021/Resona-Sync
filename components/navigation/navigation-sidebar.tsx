@@ -1,8 +1,6 @@
 import { redirect } from "next/navigation";
 import { UserButton } from "@clerk/nextjs";
-
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { ModeToggle } from "@/components/mode-toggle";
 import { Separator } from "@/components/ui/separator";
 import { currentProfile } from "@/lib/current-profile"
 import { db } from "@/lib/db";
@@ -29,7 +27,7 @@ export const NavigationSidebar = async () => {
 
   return (
     <div
-      className="space-y-4 flex flex-col items-center h-full text-primary w-full dark:bg-[#142814] bg-[#A0B4A0] py-3"
+      className="space-y-4 flex flex-col items-center h-full text-primary w-full bg-gradient-to-b from-emerald-500 from-10% to-[#11999E] to-90% shadow-2xl shadow-cyan-500/50 border-none py-3 rounded-full "
     >
       <NavigationAction />
       <Separator
@@ -47,15 +45,14 @@ export const NavigationSidebar = async () => {
         ))}
       </ScrollArea>
       <div className="pb-3 mt-auto flex items-center flex-col gap-y-4">
-        <ModeToggle />
-        <UserButton
-          afterSignOutUrl="/"
-          appearance={{
+         <UserButton
+           afterSignOutUrl="/"
+           appearance={{
             elements: {
               avatarBox: "h-[48px] w-[48px]"
             }
-          }}
-        />
+          }} 
+        /> 
       </div>
     </div>
   )
