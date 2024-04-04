@@ -42,7 +42,7 @@ export const ServerHeader = ({
         asChild
       >
         <button
-          className="text-black w-full text-md font-semibold px-3 flex items-center h-12 border-neutral-200 border-b-2 hover:bg-zinc-700/10 transition rounded-t-3xl"
+          className="text-black w-full text-md font-semibold px-3 flex items-center h-12 border-neutral-200 border-b-2 hover:bg-zinc-700/10 transition"
         >
           {server.name}
           <ChevronDown className="h-5 w-5 ml-auto" />
@@ -63,7 +63,7 @@ export const ServerHeader = ({
         {isAdmin && (
           <DropdownMenuItem
             onClick={() => onOpen("editServer", { server })}
-            className="px-3 py-2 text-sm cursor-pointer md:text-black"
+            className="px-3 py-2 text-sm cursor-pointer"
           >
             Server Settings
             <Settings className="h-4 w-4 ml-auto" />
@@ -72,7 +72,7 @@ export const ServerHeader = ({
         {isAdmin && (
           <DropdownMenuItem
             onClick={() => onOpen("members", { server })}
-            className="px-3 py-2 text-sm cursor-pointer md:text-black"
+            className="px-3 py-2 text-sm cursor-pointer"
           >
             Manage Members
             <Users className="h-4 w-4 ml-auto" />
@@ -81,7 +81,7 @@ export const ServerHeader = ({
         {isModerator && (
           <DropdownMenuItem
             onClick={() => onOpen("createChannel")}
-            className="px-3 py-2 text-sm cursor-pointer md:text-black"
+            className="px-3 py-2 text-sm cursor-pointer"
           >
             Create Channel
             <PlusCircle className="h-4 w-4 ml-auto" />
